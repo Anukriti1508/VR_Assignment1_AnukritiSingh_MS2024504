@@ -1,8 +1,22 @@
+"""==================================================
+VR_Assignment1_AnukritiSingh_MS202450
+@author Anukriti Singh
+==================================================="""
+
 import cv2
 import numpy as np
 import os
 
 def detect_coins(image_path):
+    """Returns image with detected coins, segmented coins and the number of coins 
+
+    Args:
+        image_path (str): Path for the input coin image
+
+    Returns:
+        detected_image, coins, coin_count
+    """    
+
     # Read the image
     image = cv2.imread(image_path)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -38,6 +52,7 @@ def detect_coins(image_path):
     return detected_image, coins, coin_count
 
 def save_segmented_coins(coins, output_folder="segmented_coins"):
+    """ saves the segmented coins in folder"""
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     
@@ -58,8 +73,6 @@ def main(image_path):
     
     # Display the output
     cv2.imshow("Detected Coins", detected_image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
 
 if __name__ == "__main__":
     image_path = "input_coins.jpg"  # Change this to your actual image path
