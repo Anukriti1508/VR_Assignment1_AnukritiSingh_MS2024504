@@ -26,15 +26,20 @@ pip install -r requirements.txt
 ```
 ### **Coin Detection and Segmentation**
 Run the following command to detect and segment coins in an image:
-``bash 
+```bash 
 python coin_detection_segmentation.py
-``
+```
 - Input: input_coins.jpg
 - Output: detected_coins.png (coins detected with bounding boxes and circles)
 
+### Detected Coins
+![Detected Coins](detected_coins.png)
+
 ### **Panorama Creation**
 To generate a panorama from multiple images:
-``bash 
+```bash 
 python panorama_creation.py
-``
+```
 - Output: images_panorama/panorama.jpeg
+### Panorama Output
+![Panorama](images_panorama/panorama.jpeg)
