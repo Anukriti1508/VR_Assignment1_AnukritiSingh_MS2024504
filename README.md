@@ -8,7 +8,7 @@
   - Canny edge detection alone does not differentiate between circles and other edges.  
   - Hough Circles method is specialized for circular object detection, making it more accurate for coin segmentation.  
 
-### **Panorama Creation**  
+#### **Panorama Creation**  
 The panorama creation is achieved using **feature-based image stitching**. The process involves:  
 - Detecting keypoints and computing descriptors using **SIFT (Scale-Invariant Feature Transform)**.  
 - Matching keypoints between consecutive images using a **FLANN-based matcher**.  
@@ -31,7 +31,7 @@ python coin_detection_segmentation.py
 ```
 - Input: input_coins.jpg
 - Output: detected_coins.png (coins detected with bounding boxes and circles)
-
+#### **Total number of coins detected: 35**
 ### Detected Coins
 ![Detected Coins](detected_coins.png)
 
