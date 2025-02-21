@@ -1,4 +1,4 @@
-# **VR_Assignment1_AnukritiSingh_MS202450**  
+# **VR_Assignment1_AnukritiSingh_MS2024504**  
 ## **Coin Detection, Segmentation, and Panorama Creation**  
 
 ### **Methods Used**  
